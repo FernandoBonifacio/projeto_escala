@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalinha 🎯</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/dist/date-fns.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📆 Escalinha</h1>
+        <p>Planeje quem vai segurar as pontas no fim de semana! 😎</p>
+        
+        <label for="month">📅 Escolha o mês:</label>
+        <select id="month" onchange="popularFinaisDeSemana()"></select>
+
+        <label for="year">🗓️ Escolha o ano:</label>
+        <select id="year" onchange="popularFinaisDeSemana()"></select>
+
+        <label for="weekend">🏖️ Escolha o final de semana:</label>
+        <select id="weekend"></select>
+
+        <input type="text" id="nome" placeholder="Digite o nome do guerreiro(a) 💪">
+        <button onclick="definirEscala()">🔥 Definir Escala</button>
+
+        <div class="scale">
+            <h3>📜 Lista de trabalho:</h3>
+            <ul id="escalaLista"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
