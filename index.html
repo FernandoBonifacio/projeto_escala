@@ -13,16 +13,16 @@
         <p>Planeje quem vai segurar as pontas no fim de semana! 😎</p>
         
         <label for="month">📅 Escolha o mês:</label>
-        <select id="month" onchange="popularFinaisDeSemana()"></select>
+        <select id="month" onchange="populateWeekends()"></select>
 
         <label for="year">🗓️ Escolha o ano:</label>
-        <select id="year" onchange="popularFinaisDeSemana()"></select>
+        <select id="year" onchange="populateWeekends()"></select>
 
         <label for="weekend">🏖️ Escolha o final de semana:</label>
         <select id="weekend"></select>
 
         <input type="text" id="nome" placeholder="Digite o nome do guerreiro(a) 💪">
-        <button onclick="definirEscala()">🔥 Definir Escala</button>
+        <button onclick="setSchedule()">🔥 Definir Escala</button>
 
         <div class="scale">
             <h3>📜 Lista de trabalho:</h3>
